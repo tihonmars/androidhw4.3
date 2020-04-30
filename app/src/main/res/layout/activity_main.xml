@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/chooseStartDate"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:background="@drawable/save_button"
+        android:gravity="left|center_vertical"
+        android:text="@string/start_date_of_the_task"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/chooseEndDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.128"
+        tools:ignore="MissingConstraints,RtlCompat" />
+
+    <Button
+        android:id="@+id/chooseEndDate"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:background="@drawable/save_button"
+        android:gravity="left|center_vertical"
+        android:text="@string/date_time_of_the_end_of_the_task"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.146"
+        tools:ignore="RtlCompat" />
+
+    <CalendarView
+        android:id="@+id/startDateCalendar"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:background="@color/calendar_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.400"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CalendarView
+        android:id="@+id/endtDateCalendar"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:background="@color/calendar_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.445"
+        app:layout_constraintStart_toEndOf="@+id/startDateCalendar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498" />
+
+    <Button
+        android:id="@+id/btnOK"
+        android:layout_width="123dp"
+        android:layout_height="56dp"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:background="@drawable/save_button"
+        android:text="@string/ok"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

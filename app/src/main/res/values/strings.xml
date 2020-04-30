@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Calendar</string>
+    <string name="start_date_of_the_task">Start date of the task:</string>
+    <string name="date_time_of_the_end_of_the_task">Date-time of the end of the task:</string>
+    <string name="ok">OK</string>
+</resources>
